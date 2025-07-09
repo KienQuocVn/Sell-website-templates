@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
-import dbConnect from "@/lib/mongodb"
-import Contact from "@/models/Contact"
+import dbConnect from "../../../lib/mongodb"
+import Contact from "../../../models/Contact"
 
 /**
  * POST /api/contact
@@ -54,7 +54,7 @@ export async function GET(request: NextRequest) {
   try {
     await dbConnect()
 
-    const { getUserFromRequest } = await import("@/lib/auth")
+    const { getUserFromRequest } = await import("../../../lib/auth")
     const currentUser = getUserFromRequest(request)
 
     if (!currentUser || currentUser.role !== "admin") {

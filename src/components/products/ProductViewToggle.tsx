@@ -1,7 +1,7 @@
 "use client"
 
 import { Grid, List } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button } from "../../components/ui/button"
 
 interface ProductViewToggleProps {
   viewMode: "grid" | "list"

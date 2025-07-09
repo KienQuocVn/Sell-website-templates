@@ -4,10 +4,10 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import { Eye, EyeOff, Mail, Lock, User } from "lucide-react"
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Checkbox } from "@/components/ui/checkbox"
+import { Button } from "../../../components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "../../../components/ui/card"
+import { Input } from "../../../components/ui/input"
+import { Checkbox } from "../../../components/ui/checkbox"
 
 export default function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false)

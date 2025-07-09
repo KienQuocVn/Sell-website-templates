@@ -3,9 +3,9 @@
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import { ShoppingCart } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { useCartStore } from "@/store/useCartStore"
+import { Button } from "../../components/ui/button"
+import { Badge } from "../../components/ui/badge"
+import { useCartStore } from "../../store/useCartStore"
 
 export function CartIcon() {
   const { getTotalItems } = useCartStore()

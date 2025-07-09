@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server"
-import dbConnect from "@/lib/mongodb"
-import Order from "@/models/Order"
-import { getUserFromRequest } from "@/lib/auth"
+import dbConnect from "../../../../lib/mongodb"
+import Order from "../../../../models/Order"
+import { getUserFromRequest } from "../../../../lib/auth"
 
 /**
  * GET /api/orders/[id]

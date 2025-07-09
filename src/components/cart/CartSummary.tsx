@@ -3,14 +3,14 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { CreditCard, Shield, Truck, Gift, ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Separator } from "@/components/ui/separator"
-import { Badge } from "@/components/ui/badge"
-import { useCartStore } from "@/store/useCartStore"
-import { formatPrice } from "@/lib/utils"
+import { Button } from "../../components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card"
+import { Input } from "../../components/ui/input"
+import { Label } from "../../components/ui/label"
+import { Separator } from "../../components/ui/separator"
+import { Badge } from "../../components/ui/badge"
+import { useCartStore } from "../../store/useCartStore"
+import { formatPrice } from "../../lib/utils"
 
 export function CartSummary() {
   const { items, getTotalItems, getTotalPrice } = useCartStore()

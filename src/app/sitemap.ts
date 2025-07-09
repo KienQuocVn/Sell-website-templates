@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next"
-import dbConnect from "@/lib/mongodb"
-import Product from "@/models/Product"
+import dbConnect from "../lib/mongodb"
+import Product from "../models/Product"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://kqweb.vercel.app"

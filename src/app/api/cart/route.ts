@@ -18,8 +18,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Import here to avoid circular dependency
-    const dbConnect = (await import("@/lib/mongodb")).default
-    const Product = (await import("@/models/Product")).default
+    const dbConnect = (await import("../../../lib/mongodb")).default
+    const Product = (await import("../../../models/Product")).default
 
     await dbConnect()
 

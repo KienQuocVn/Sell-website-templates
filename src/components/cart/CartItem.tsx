@@ -4,14 +4,14 @@ import { useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Trash2, Plus, Minus, ExternalLink, Heart } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
-import OptimizedImage from "@/components/ui/OptimizedImage"
+import { Button } from "../../components/ui/button"
+import { Input } from "../../components/ui/input"
+import { Badge } from "../../components/ui/badge"
+import OptimizedImage from "../../components/ui/OptimizedImage"
 
-import { useCartStore, type CartItem as CartItemType } from "@/store/useCartStore"
-import { useWishlist } from "@/hooks/useWishlist"
-import { formatPrice } from "@/lib/utils"
+import { useCartStore, type CartItem as CartItemType } from "../../store/useCartStore"
+import { useWishlist } from "../../hooks/useWishlist"
+import { formatPrice } from "../../lib/utils"
 
 interface CartItemProps {
   item: CartItemType

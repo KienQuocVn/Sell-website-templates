@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Code, Heart, Users, Award } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "../../components/ui/card"
 import Image from "next/image"
 
 export default function AboutPageContent() {

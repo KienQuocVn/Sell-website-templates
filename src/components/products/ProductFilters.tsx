@@ -3,14 +3,14 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { ChevronDown, ChevronUp, RotateCcw } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Slider } from "@/components/ui/slider"
-import { Checkbox } from "@/components/ui/checkbox"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
-import type { ProductFilters as ProductFiltersType } from "@/types/product"
+import { Button } from "../../components/ui/button"
+import { Input } from "../../components/ui/input"
+import { Label } from "../../components/ui/label"
+import { Slider } from "../../components/ui/slider"
+import { Checkbox } from "../../components/ui/checkbox"
+import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card"
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../../components/ui/collapsible"
+import type { ProductFilters as ProductFiltersType } from "../../types/product"
 
 interface ProductFiltersProps {
   filters: ProductFiltersType

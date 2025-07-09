@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import type { Product } from "@/types/product"
+import type { Product } from "../types/product"
 
 export function useWishlist() {
   const [items, setItems] = useState<Product[]>([])

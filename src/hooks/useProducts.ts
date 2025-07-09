@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useCallback } from "react"
-import type { Product, ProductFilters, ProductsResponse } from "@/types/product"
+import type { Product, ProductFilters, ProductsResponse } from "../types/product"
 
 interface UseProductsOptions extends ProductFilters {
   limit?: number
